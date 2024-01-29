@@ -9,7 +9,11 @@
   >
     <div class="bg-white p-8 w-2/5 rounded-lg">
       <h1 class="text-xl font-bold text-gray-700 mb-2">Login</h1>
-      <form id="login-form" class="flex flex-col">
+      <form
+        on:submit={() => (window.location.href = "/catalogue/cse")}
+        id="login-form"
+        class="flex flex-col"
+      >
         <label for="email" class="text-sm text-gray-500">Email</label>
         <input
           type="email"
